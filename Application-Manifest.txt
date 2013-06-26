@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <ApplicationManifest xmlns="http://schemas.google.com/ApplicationManifest/2009">
-  <Name>e5: Google Apps + WordPress</Name>
-  <Description>Harness the power of WordPress within your Google Apps domain… specifically designed for small businesses!</Description>
+  <Name>Site web</Name>
+  <Description>Notre site web</Description>
 
   <!-- Administrators and users will be sent to this URL for application support -->
   <Support>
-    <Link rel="support" href="http://e5.io/contact" />
-    <Link rel="setup" href="http://e5.io/?domain=${DOMAIN_NAME}&amp;action=gapps-setup" />
+    <Link rel="support" href="http://gpcsolutions.fr/contact" />
+    <Link rel="setup" href="http://gpcsolutions.fr/?domain=${DOMAIN_NAME}&amp;action=gapps-setup" />
   </Support>
 
   <!-- Show this link in Google's universal navigation for all users -->
   <Extension id="navLink" type="link">
-    <Name>e5 Web site builder</Name>
-    <Url>http://e5.io/?from=google&amp;action=login&amp;domain=${DOMAIN_NAME}</Url>
+    <Name>Site web</Name>
+    <Url>http://gpcsolutions.fr/?from=google&amp;action=login&amp;domain=${DOMAIN_NAME}</Url>
     <Scope ref="calendarAPI"/>
     <Scope ref="contactFeed"/>
     <Scope ref="userFeed"/>
@@ -23,7 +23,7 @@
 
   <!-- Declare our OpenID realm so our app is white listed -->
   <Extension id="realm" type="openIdRealm">
-    <Url>http://e5.io/</Url>
+    <Url>http://gpcsolutions.fr/</Url>
   </Extension>
 
   <!-- Need access to the Calendar API -->
